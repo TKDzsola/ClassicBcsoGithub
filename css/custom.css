@@ -1,4 +1,4 @@
-/* Globális Modernizáció */
+/* SEO & Tipográfia */
 body {
     font-family: 'Nunito', sans-serif;
     overflow-x: hidden;
@@ -48,6 +48,31 @@ h1, h2, h3, .navbar-brand {
     border-color: #64a19d;
     background: #080808 !important;
     transform: translateY(-5px);
+}
+
+/* Vezetőségi ikonok stílusa */
+.leader-icon-wrap {
+    background: rgba(100, 161, 157, 0.1);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid rgba(100, 161, 157, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.modern-card:hover .leader-icon-wrap {
+    background: rgba(100, 161, 157, 0.2);
+    transform: scale(1.1) rotate(5deg);
+    border-color: #64a19d;
+}
+
+.modern-card p.text-primary {
+    letter-spacing: 1px;
 }
 
 /* Navigáció */
