@@ -1,9 +1,18 @@
 /* Globális Modernizáció */
-body { font-family: 'Nunito', sans-serif; overflow-x: hidden; }
-h1, h2, h3, .navbar-brand { font-family: 'Montserrat', sans-serif; }
+body {
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+}
 
 /* Glassmorphism Hatás */
-.glass-text { text-shadow: 0 0 20px rgba(0,0,0,0.8); letter-spacing: 5px; }
+.glass-text {
+    text-shadow: 0 0 20px rgba(0,0,0,0.8);
+    letter-spacing: 5px;
+}
 
 /* Modern Sheriff Háttér */
 .sheriff-bg {
@@ -31,13 +40,36 @@ h1, h2, h3, .navbar-brand { font-family: 'Montserrat', sans-serif; }
 }
 
 /* Modern Szekció Kártyák */
-.modern-card { transition: all 0.3s ease; }
-.modern-card:hover { transform: translateY(-5px); border-color: #64a19d; }
+.modern-card {
+    transition: all 0.3s ease;
+}
 
-.navbar-logo { max-height: 55px; }
-.img-shadow { box-shadow: 0 15px 35px rgba(0,0,0,0.6); }
+.modern-card:hover {
+    border-color: #64a19d;
+    background: #080808 !important;
+    transform: translateY(-5px);
+}
 
+/* Navigáció */
+.navbar-logo {
+    max-height: 55px;
+}
+
+.img-shadow {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+.sheriff-car-img {
+    max-height: 450px;
+    border: 2px solid rgba(255,255,255,0.1);
+}
+
+/* Mobilos finomhangolás */
 @media (max-width: 768px) {
-    .masthead h1 { font-size: 2rem !important; }
-    .sheriff-bg { background-attachment: scroll; }
+    .masthead h1 {
+        font-size: 2rem !important;
+    }
+    .sheriff-bg {
+        background-attachment: scroll;
+    }
 }
