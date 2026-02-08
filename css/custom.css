@@ -10,7 +10,7 @@ h1, h2, h3, .navbar-brand {
 
 /* 1. Landing & Navigation */
 #mainNav {
-    background-color: rgba(0, 0, 0, 0.85) !important; /* 20-25% layer megoldva sötétítéssel */
+    background-color: rgba(0, 0, 0, 0.85) !important;
     padding: 0.5rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -59,10 +59,6 @@ h1, h2, h3, .navbar-brand {
     transform: translateY(-5px);
 }
 
-.stat-card i {
-    opacity: 0.8;
-}
-
 /* 3. Alosztályok & Vezetőség */
 .division-card {
     background: #000;
@@ -73,22 +69,12 @@ h1, h2, h3, .navbar-brand {
 
 .division-card:hover {
     border-color: #64a19d;
-    background: #050505;
 }
 
 .leader-card {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 20px;
-    transition: 0.3s;
-}
-
-.leader-card:hover {
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.leader-icon {
-    opacity: 0.7;
 }
 
 /* 4. Kontakt & Karrier */
@@ -102,15 +88,7 @@ h1, h2, h3, .navbar-brand {
     border-color: rgba(220, 53, 69, 0.3);
 }
 
-.max-w-2xl {
-    max-width: 42rem;
-}
-
-.italic { font-style: italic; }
-.x-small { font-size: 0.7rem; }
-
-/* Mobil optimalizáció */
 @media (max-width: 768px) {
     .masthead h1 { font-size: 2rem !important; }
-    .bg-blur-box { padding: 2rem !important; margin: 10px; }
+    .bg-blur-box { padding: 2rem !important; }
 }
