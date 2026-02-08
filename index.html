@@ -8,9 +8,9 @@
         <title>Classic Roleplay - Sheriff Office</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
         
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/custom.css" rel="stylesheet" />
@@ -22,15 +22,14 @@
                     <img src="./assets/img/SheriffLogo.JPG" alt="BCSO Logo" class="navbar-logo rounded-circle shadow-sm">
                 </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menü
-                    <i class="fas fa-bars"></i>
+                    Menü <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#stats">Érdekességek</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">A frakcióról</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#stats">Statisztikák</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Rólunk</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Állomány</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Jelentkezés</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">Karrier</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,43 +37,36 @@
 
         <header class="masthead sheriff-bg">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="text-center">
-                    <h1 class="mx-auto my-0 text-uppercase fw-bold text-white shadow-lg">Blaine County Sheriff Office</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5 px-3">Rendfenntartás, Becsület, Elkötelezettség.</h2>
-                    <a class="btn btn-primary px-4 py-3 shadow" href="#about">Ismerj meg minket</a>
+                <div class="text-center" data-aos="zoom-in" data-aos-duration="1500">
+                    <h1 class="mx-auto my-0 text-uppercase fw-bold text-white glass-text">Blaine County Sheriff Office</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5 px-3">Hűség a törvényhez, elkötelezettség a néphez.</h2>
+                    <a class="btn btn-primary px-5 py-3 shadow-lg rounded-pill" href="#about">Fedezze fel</a>
                 </div>
             </div>
         </header>
 
-        <section class="stats-section py-5 bg-black text-white" id="stats">
+        <section class="stats-section py-5 bg-black" id="stats">
             <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center text-center">
-                    <div class="col-md-3 mb-4">
-                        <div class="stat-item shadow">
+                <div class="row gx-4 justify-content-center text-center">
+                    <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-card shadow">
                             <i class="fas fa-shield-alt text-primary mb-3 fa-2x"></i>
-                            <h3 class="fw-bold">15+</h3>
+                            <h3 class="fw-bold counter">15</h3>
                             <p class="text-white-50 small text-uppercase mb-0">Aktív tiszt</p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="stat-item shadow">
+                    <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-card shadow">
                             <i class="fas fa-car text-primary mb-3 fa-2x"></i>
-                            <h3 class="fw-bold">200+</h3>
-                            <p class="text-white-50 small text-uppercase mb-0">Üldözés havonta</p>
+                            <h3 class="fw-bold counter">200</h3>
+                            <p class="text-white-50 small text-uppercase mb-0">Havi intézkedés</p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="stat-item shadow">
+                    <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-card shadow">
                             <i class="fas fa-handcuffs text-primary mb-3 fa-2x"></i>
-                            <h3 class="fw-bold">500+</h3>
-                            <p class="text-white-50 small text-uppercase mb-0">Sikeres előállítás</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="stat-item shadow">
-                            <i class="fas fa-map-marker-alt text-primary mb-3 fa-2x"></i>
-                            <h3 class="fw-bold">3</h3>
-                            <p class="text-white-50 small text-uppercase mb-0">Aktív kapitányság</p>
+                            <h3 class="fw-bold counter">500</h3>
+                            <p class="text-white-50 small text-uppercase mb-0">Előállítás</p>
                         </div>
                     </div>
                 </div>
@@ -82,91 +74,53 @@
         </section>
 
         <section class="about-section text-center py-5" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-4 border-bottom pb-3 mx-auto w-75 font-weight-bold">Múltunk és Jövőnk</h2>
-                        <p class="text-white-50 px-2 leading-relaxed">
-                            A Blaine County Sheriff's Office feladata a vidék nyugalmának és biztonságának megőrzése. 
-                            Kollégáink a nap 24 órájában szolgálatban vannak Paleto Bay-től Sandy Shores-ig, hogy 
-                            a Classic Roleplay polgárai minden pillanatban biztonságban érezhessék magukat.
-                        </p>
-                    </div>
-                </div>
-                <img class="img-fluid rounded mt-5 img-shadow sheriff-car-img" src="assets/img/BcsoCars.jpg" alt="Sheriff Cars" />
+            <div class="container px-4 px-lg-5" data-aos="fade-up">
+                <h2 class="text-white mb-4 border-bottom pb-3 mx-auto w-50 font-weight-bold">A Megye Őrei</h2>
+                <p class="text-white-50 px-2 leading-relaxed mb-5">
+                    A Blaine County Sheriff's Office nem csupán egy szerv, hanem egy közösség. Feladatunk Paleto Bay és Sandy Shores lakóinak védelme modern eszközökkel, de hagyományos értékekkel.
+                </p>
+                <img class="img-fluid rounded-3 img-shadow sheriff-car-img" src="assets/img/BcsoCars.jpg" alt="Sheriff Cars" />
             </div>
         </section>
 
-        <section class="projects-section bg-light py-5" id="projects">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-0 mb-4 align-items-center bg-white shadow-sm rounded overflow-hidden">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid w-100" src="assets/img/bg-masthead.jpg" alt="Sheriff Office" /></div>
-                    <div class="col-xl-4 col-lg-5 p-4 text-center text-lg-start">
-                        <h4 class="fw-bold">Hivatalvezetés</h4>
-                        <p class="text-black-50 mb-0 small text-justify">Hivatalunk élén a Sheriff és az Undersheriff áll, akik felelősek a stratégiai döntésekért és a megye biztonságáért.</p>
-                    </div>
-                </div>
-                <div class="row gx-4 mt-4">
-                    <div class="col-md-6 mb-4">
-                        <div class="division-card bg-black text-center p-4 h-100 rounded shadow-lg border-bottom border-primary border-3">
-                            <i class="fas fa-dog text-primary mb-3 fa-2x"></i>
-                            <h4 class="text-white">K-9 Egység</h4>
-                            <p class="mb-0 text-white-50 small">Négylábú kollégáink segítik a kábítószer-keresést és a bűnözők hatékony elfogását.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="division-card bg-black text-center p-4 h-100 rounded shadow-lg border-bottom border-primary border-3">
-                            <i class="fas fa-helicopter text-primary mb-3 fa-2x"></i>
-                            <h4 class="text-white">Légi Támogatás</h4>
-                            <p class="mb-0 text-white-50 small">A magasból figyeljük a megye minden szegletét, biztosítva a légi fölényt üldözéseknél.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="signup-section py-5" id="signup">
-            <div class="container px-4 px-lg-5 text-center">
-                <i class="far fa-paper-plane fa-2x mb-3 text-white"></i>
-                <h2 class="text-white mb-4 h3">Csatlakozz hozzánk!</h2>
-                <p class="text-white-50 mb-4 small">A tagfelvétel jelenleg nyitva áll minden elhivatott jelentkező számára.</p>
-                <a class="btn btn-primary btn-lg btn-mobile-wide shadow-lg px-5" href="https://docs.google.com/spreadsheets/u/0/" target="_blank">Jelentkezési lap</a>
-            </div>
-        </section>
-
-        <section class="contact-section bg-black py-5">
+        <section class="projects-section bg-dark py-5" id="projects">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4">
-                    <div class="col-md-4 mb-3">
-                        <div class="card py-3 border-0 shadow-sm h-100 text-center">
-                            <i class="fas fa-map-marked-alt text-primary mb-2 mt-3"></i>
-                            <h4 class="h6 fw-bold text-uppercase">Központ</h4>
-                            <div class="small text-black-50 mb-3 px-2">Paleto Bay, Sheriff Office</div>
+                    <div class="col-md-6 mb-4" data-aos="fade-right">
+                        <div class="modern-card bg-black p-5 h-100 rounded-4">
+                            <i class="fas fa-dog text-primary mb-3 fa-3x"></i>
+                            <h4 class="text-white fw-bold">K-9 Divízió</h4>
+                            <p class="text-white-50">Speciálisan képzett egységeink a legnehezebb terepen is helytállnak négylábú társaikkal.</p>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card py-3 border-0 shadow-sm h-100 text-center">
-                            <i class="fas fa-envelope text-primary mb-2 mt-3"></i>
-                            <h4 class="h6 fw-bold text-uppercase">Kapcsolat</h4>
-                            <div class="small text-black-50 mb-3"><a href="https://discord.gg/Csbd8VgRct">BCSO Discord szerver</a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card py-3 border-0 shadow-sm h-100 text-center text-danger">
-                            <i class="fas fa-mobile-alt mb-2 mt-3"></i>
-                            <h4 class="h6 fw-bold text-uppercase">Sürgősségi</h4>
-                            <div class="fw-bold text-uppercase mb-3">911 (Csak IG)</div>
+                    <div class="col-md-6 mb-4" data-aos="fade-left">
+                        <div class="modern-card bg-black p-5 h-100 rounded-4">
+                            <i class="fas fa-helicopter text-primary mb-3 fa-3x"></i>
+                            <h4 class="text-white fw-bold">Air Support</h4>
+                            <p class="text-white-50">A levegőből biztosítjuk a helyszíni egységek munkáját, szem előtt tartva a megye biztonságát.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer class="footer bg-black small text-center text-white-50 py-4 border-top border-secondary">
-            <div class="container px-4 text-uppercase">Copyright &copy; Classic Roleplay - BCSO 2026 | Készítette: <a href="http://pasztorzsolt.hu" target="_blank">Pásztor Zsolt</a></div>
+        <section class="signup-section py-5 text-center" id="signup">
+            <div class="container px-4 px-lg-5" data-aos="zoom-in">
+                <h2 class="text-white mb-4">Készen állsz a szolgálatra?</h2>
+                <p class="text-white-50 mb-5">Várjuk azokat, akik nem félnek a felelősségtől.</p>
+                <a class="btn btn-primary btn-lg rounded-pill shadow-lg px-5 hover-grow" href="https://docs.google.com/forms/d/e/1FAIpQLScb5ypsFMSsbombzGC1i8dMvAPpuI8OOLKm6bUtehqdaOIAag/viewform" target="_blank">Jelentkezz most</a>
+            </div>
+        </section>
+
+        <footer class="footer bg-black small text-center text-white-50 py-5 border-top border-secondary">
+            <div class="container px-4">Copyright &copy; Classic Roleplay - BCSO 2026 | Készítette: Pásztor Zsolt</div>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init(); // Animációk indítása
+        </script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
