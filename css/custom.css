@@ -1,130 +1,116 @@
-/* SEO & Tipográfia */
+/* Globális korrekciók */
 body {
     font-family: 'Nunito', sans-serif;
-    overflow-x: hidden;
+    background-color: #000;
 }
 
 h1, h2, h3, .navbar-brand {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Glassmorphism Hatás a címszövegen */
-.glass-text {
-    text-shadow: 0 0 20px rgba(0,0,0,0.8);
-    letter-spacing: 5px;
+/* 1. Landing & Navigation */
+#mainNav {
+    background-color: rgba(0, 0, 0, 0.85) !important; /* 20-25% layer megoldva sötétítéssel */
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Modern Sheriff Háttér */
+.navbar-logo {
+    max-height: 50px;
+}
+
 .sheriff-bg {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%), 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.85) 100%), 
                 url('../assets/img/SheriffBackgroundPic.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    position: relative;
 }
 
-/* A szövegdoboz elmosása (Blur box) a Mastheaden */
 .bg-blur-box {
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    max-width: 800px;
 }
 
-/* Statisztika Kártyák */
+.divider-custom {
+    height: 3px;
+    width: 100px;
+    background-color: #64a19d;
+    margin: 0 auto;
+}
+
+/* 2. Statisztikák & Szekciók */
+.bg-dark-custom {
+    background-color: #0a0a0a;
+}
+
 .stat-card {
+    background: rgba(255, 255, 255, 0.03);
     padding: 30px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.4s ease;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .stat-card:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-8px);
-    border-color: #64a19d;
-}
-
-/* Alosztály Kártyák */
-.modern-card {
-    transition: all 0.3s ease;
-}
-
-.modern-card:hover {
-    border-color: #64a19d;
-    background: #080808 !important;
+    background: rgba(255, 255, 255, 0.07);
     transform: translateY(-5px);
 }
 
-/* Sötét Contact Kártyák (Javítva a kérésed szerint) */
-.contact-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 15px;
-    transition: all 0.3s ease;
+.stat-card i {
+    opacity: 0.8;
 }
 
-.contact-card:hover {
-    background: rgba(255, 255, 255, 0.07);
+/* 3. Alosztályok & Vezetőség */
+.division-card {
+    background: #000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.division-card:hover {
     border-color: #64a19d;
+    background: #050505;
+}
+
+.leader-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.leader-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.leader-icon {
+    opacity: 0.7;
+}
+
+/* 4. Kontakt & Karrier */
+.contact-box {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .border-danger-soft {
-    border: 1px solid rgba(220, 53, 69, 0.2) !important;
+    border-color: rgba(220, 53, 69, 0.3);
+}
+
+.max-w-2xl {
+    max-width: 42rem;
 }
 
 .italic { font-style: italic; }
-.x-small { font-size: 0.75rem; }
+.x-small { font-size: 0.7rem; }
 
-/* Vezetőségi ikonok stílusa */
-.leader-icon-wrap {
-    background: rgba(100, 161, 157, 0.1);
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    margin: 0 auto;
-    border-radius: 50%;
-    border: 1px solid rgba(100, 161, 157, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.modern-card:hover .leader-icon-wrap {
-    background: rgba(100, 161, 157, 0.2);
-    transform: scale(1.1) rotate(5deg);
-    border-color: #64a19d;
-}
-
-/* Navigáció */
-.navbar-logo {
-    max-height: 55px;
-}
-
-.img-shadow {
-    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
-}
-
-.sheriff-car-img {
-    max-height: 450px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Mobilos finomhangolás */
+/* Mobil optimalizáció */
 @media (max-width: 768px) {
-    .masthead h1 {
-        font-size: 1.8rem !important;
-    }
-    .sheriff-bg {
-        background-attachment: scroll;
-    }
-    .bg-blur-box {
-        padding: 2rem !important;
-        margin: 1rem;
-    }
+    .masthead h1 { font-size: 2rem !important; }
+    .bg-blur-box { padding: 2rem !important; margin: 10px; }
 }
